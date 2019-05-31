@@ -1,0 +1,117 @@
+*::before,
+*::after,
+* {
+  box-sizing: content-box;
+}
+
+:root {
+  font-family: "Noto Sans HK", sans-serif;
+}
+
+/* Tag selector */
+
+body {
+  margin: 0px;
+}
+header {
+  background: pink;
+  text-shadow: 0 2px 3px grey;
+}
+
+header h1 {
+  margin-top: 0px;
+}
+
+body > header h1 {
+  color: goldenrod;
+}
+
+/* Class */
+
+.is-completed {
+  color: rgb(124, 150, 141);
+}
+
+.is-current {
+  color: blue;
+}
+
+.is-current .is-completed {
+  color: lightgreen;
+}
+
+/*combine selector */
+ul.is-current {
+  color: rebeccapurple;
+}
+
+.header_block {
+  margin: 20px;
+  float: right;
+  display: inline-block;
+}
+
+/* ID selector */
+#my_identifier {
+  color: blueviolet;
+}
+
+/* voor de links hoover- veranderen als je erover gaat*/
+
+a {
+  color: palevioletred;
+}
+
+a:hover {
+  border-bottom: 2px;
+}
+
+/* pseudo*/
+
+a:hover {
+  color: pink;
+}
+
+body > footer {
+  background: 7%;
+  padding: 7rem;
+}
+
+blockquote p::before {
+  content: open-quote;
+  color: antiquewhite;
+  font-size: 7rem;
+  display: inline-block;
+  float: left;
+  transform: rotate(-30deg);
+}
+
+header,
+footer {
+  background: blue;
+}
+
+header {
+  box-sizing: border-box;
+  width: 80%;
+}
+
+.body {
+  margin: 0%;
+}
+
+/*positioning */
+.site-footer {
+  position: absolute;
+  bottom: 0;
+  background: orange;
+  padding: 1rem;
+  z-index: auto;
+}
+
+.section {
+  width: 80vw;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 10rem;
+}
